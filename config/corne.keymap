@@ -7,5 +7,6 @@
 
 // Specify the chain-length of LEDs
 // &led_strip {
-//     chain-length = <27>;
+//     // chain-length = <6>;  // Under keyboard 
+//     chain-length = <27>;  // All 
 // };
