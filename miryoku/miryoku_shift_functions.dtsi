@@ -36,6 +36,15 @@ MIRYOKU_SHIFT_FUNCTION(u_rgb_hui, &rgb_ug RGB_HUI, &rgb_ug RGB_HUD)
 MIRYOKU_SHIFT_FUNCTION(u_rgb_sai, &rgb_ug RGB_SAI, &rgb_ug RGB_SAD)
 MIRYOKU_SHIFT_FUNCTION(u_rgb_bri, &rgb_ug RGB_BRI, &rgb_ug RGB_BRD)
 
+// TODOST Test this make the EP_OFF to EP_ON to be able to manually
+// turn the external power ON instead of toggle it
+//
+// MIRYOKU_SHIFT_FUNCTION(u_ep_tog, &ext_power EP_ON, &ext_power EP_ON)
+//
+// *Rational* : EP_TOG just turns OLED display off, and never on again 
+// The underglow and display are not compatible,
+// maybe manually enabling the external power `EP_ON` can fix the issue
+// This change will make <MEDIA Layer + M> to power ON
 MIRYOKU_SHIFT_FUNCTION(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
 
 #endif
